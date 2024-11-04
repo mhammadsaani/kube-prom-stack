@@ -1,0 +1,11 @@
+# values-dev.yaml
+
+# Development-specific configurations
+prometheus:
+  prometheusSpec:
+    replicas: 1 # Set to 1 for development
+
+grafana:
+  enabled: true # Enable Grafana for the development environment
+  service:
+    type: NodePort # Use NodePort for easy access during development

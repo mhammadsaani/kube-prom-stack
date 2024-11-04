@@ -1,0 +1,21 @@
+# values-common.yaml
+
+# Prometheus configuration
+prometheus:
+  prometheusSpec:
+    retention: 10d # Set retention period for metrics
+
+# Alertmanager configuration
+alertmanager:
+  alertmanagerSpec:
+    replicas: 2 # Number of Alertmanager replicas
+
+# Grafana configuration
+grafana:
+  admin:
+    existingSecret: grafana-admin # Reference to a secret containing admin credentials
+
+# Disable certain features (customize as needed)
+kube-prometheus-stack:
+  kube-prometheus-stack:
+    enablePrometheusOperator: true # Enable the Prometheus Operator
