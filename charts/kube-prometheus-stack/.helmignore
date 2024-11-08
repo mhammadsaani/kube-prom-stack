@@ -27,3 +27,4 @@ kube-prometheus-*.tgz
 
 unittests/
 files/dashboards/
+configs/
